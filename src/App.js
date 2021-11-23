@@ -1,6 +1,6 @@
-import "./App.css";
 import axios from "axios";
 import { Component } from "react";
+import Card from "./components/card";
 
 class App extends Component {
   state = {
@@ -17,6 +17,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header"></header>
+        {this.state.data.map((c) => (
+          <Card
+            name={c.name.common}
+            capital={c.capital}
+            flag={c.flags.png}
+            population={c.population}
+          />
+        ))}
       </div>
     );
   }

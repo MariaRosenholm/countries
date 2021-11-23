@@ -1,13 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  padding-top: 3vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1,
+h2,
+p {
+  padding: 1vh;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 4vh;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  padding-bottom: 3vh;
+}
+
+.card {
+  border: 5px black solid;
+  width: 30%;
+  height: 50vh;
+  margin: 3vh auto;
+  padding: 5vh;
+  border-radius: 40px;
+  box-shadow: rgb(184, 171, 171) 0px 10px 6px;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 10vh;
 }
