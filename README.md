@@ -19,4 +19,4 @@ Photo by Monstera from Pexels: https://www.pexels.com/photo/interior-of-travel-a
 
 ## Screenshot
 
-![screenshot of application homepage](screenshot.png)
+![Screenshot of the application homepage](Screenshot.png)
