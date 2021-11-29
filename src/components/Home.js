@@ -2,9 +2,10 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Country search!</h1>
-      <p>Search information about countries.</p>
+    <div id="home">
+      <h1>
+        C<span id="ountr">ountr</span>y search
+      </h1>
     </div>
   );
 };

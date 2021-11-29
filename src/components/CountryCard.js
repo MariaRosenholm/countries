@@ -12,7 +12,7 @@ const CountryCard = ({
 }) => {
   return (
     <div className="card">
-      <Link id="link" to={capital}>
+      <Link className="link" to={capital}>
         <img alt="country flag" src={flag} />
         <h1>{name}</h1>
         <h2>

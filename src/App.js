@@ -21,10 +21,14 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link className="link linkApp" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/search">Search</Link>
+            <Link className="link linkApp" to="/search">
+              Search
+            </Link>
           </li>
         </ul>
       </nav>

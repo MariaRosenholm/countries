@@ -36,9 +36,7 @@ class CountryList extends Component {
 
     if (!this.state.loading) {
       return (
-        <div className="App">
-          <header className="App-header"></header>
-          <h1>Country search</h1>
+        <div>
           <input
             type="text"
             name="search"
@@ -49,6 +47,11 @@ class CountryList extends Component {
             {countryFilter.map((c) => (
               <CountryCard {...c} id={c.name} />
             ))}
+          </div>
+          <div id="footerWrapper">
+            <p>Copyrights</p>
+            <p>App made by Maria Rosenholm</p>
+            <div id="footerPic"></div>
           </div>
         </div>
       );
