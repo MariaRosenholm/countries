@@ -1,66 +1,41 @@
-import axios from "axios";
-import { Component } from "react";
-import Card from "./components/card";
+import React from "react";
+import CountryList from "./components/CountryList";
+import Home from "./components/Home";
+import CountrySingle from "./components/CountrySingle";
+import {
+  BrowserRouter,
+  Link,
+  Routes,
+  Route,
+  useParams,
+} from "react-router-dom";
 
-class App extends Component {
-  state = {
-    data: [],
-    search: "",
-    loading: true,
-  };
+const RouteWrapper = (props) => {
+  const params = useParams();
+  return <CountrySingle params={params} {...props} />;
+};
 
-  componentDidMount() {
-    axios
-      .get(
-        "https://restcountries.com/v2/all?fields=name,capital,currencies,flag,population,currency,languages"
-      )
-      .then((res) => {
-        this.setState({ data: res.data, loading: false });
-      });
-  }
+const App = () => {
+  return (
+    <BrowserRouter>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/search">Search</Link>
+          </li>
+        </ul>
+      </nav>
 
-  searchHandler = (e) => {
-    this.setState({ search: e.target.value });
-  };
-
-  render() {
-    const countryFilter = this.state.data.filter((country) => {
-      return country.name
-        .toLocaleLowerCase()
-        .includes(this.state.search.toLocaleLowerCase());
-    });
-
-    if (this.state.loading) {
-      return <div className="loader"></div>;
-    }
-
-    if (!this.state.loading) {
-      return (
-        <div className="App">
-          <header className="App-header"></header>
-          <h1>Country search</h1>
-          <input
-            type="text"
-            name="search"
-            placeholder="search by country name"
-            onChange={this.searchHandler}
-          />
-          <div id="countriesWrapper">
-            {countryFilter.map((c) => (
-              <Card
-                name={c.name}
-                capital={c.capital}
-                flag={c.flag}
-                population={c.population}
-                currencies={c.currencies}
-                languages={c.languages}
-              />
-            ))}
-          </div>
-        </div>
-      );
-    }
-  }
-}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<CountryList />} />
+        <Route path="/search/:capital" element={<RouteWrapper />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
