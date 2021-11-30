@@ -2,6 +2,7 @@ import React from "react";
 import CountryList from "./components/CountryList";
 import Home from "./components/Home";
 import CountrySingle from "./components/CountrySingle";
+import About from "./components/About";
 import {
   BrowserRouter,
   Link,
@@ -29,12 +30,18 @@ const App = () => {
             <Link className="link linkApp" to="/search">
               Search
             </Link>
+          </li>{" "}
+          <li>
+            <Link className="link linkApp" to="/about">
+              About
+            </Link>
           </li>
         </ul>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/search" element={<CountryList />} />
         <Route path="/search/:capital" element={<RouteWrapper />} />
       </Routes>

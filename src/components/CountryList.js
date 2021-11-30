@@ -48,7 +48,7 @@ class CountryList extends Component {
               <CountryCard {...c} id={c.name} />
             ))}
           </div>
-          <div id="footerWrapper">
+          <div className="footerWrapper">
             <p>Copyrights</p>
             <p>App made by Maria Rosenholm 2021</p>
             <div id="footerPic"></div>

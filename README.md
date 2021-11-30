@@ -10,7 +10,7 @@ Weather data: https://openweathermap.org/
 
 ## Pictures
 
-### Home page background
+### Home and About page background
 
 Photo by Monstera from Pexels: https://www.pexels.com/photo/interior-of-travel-agency-workplace-7411973/
 
@@ -20,6 +20,9 @@ Photo by Monstera from Pexels: https://www.pexels.com/photo/interior-of-travel-a
 - Axios
 - React Router 6
 
-## Screenshot
+## Screenshots
 
-![Screenshot of the application homepage](Screenshot.png)
+![Screenshot of the application homepage](./src/assets/home.png)
+![Screenshot of the application search page](./src/assets/search.png)
+![Screenshot of the application single country page](./src/assets/singleCountry.png)
+![Screenshot of the application about page](./src/assets/about.png)
