@@ -6,12 +6,9 @@ const getCountry = (capital) => {
 };
 
 const getWeather = (capital) => {
-  return axios.get("http://api.weatherstack.com/current", {
-    params: {
-      access_key: process.env.REACT_APP_API_KEY,
-      query: capital,
-    },
-  });
+  return axios.get(
+    `https://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=${process.env.REACT_APP_WEATHERAPI_KEY}`
+  );
 };
 
 class CountrySingle extends Component {

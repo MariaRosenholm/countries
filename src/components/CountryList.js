@@ -50,7 +50,7 @@ class CountryList extends Component {
           </div>
           <div id="footerWrapper">
             <p>Copyrights</p>
-            <p>App made by Maria Rosenholm</p>
+            <p>App made by Maria Rosenholm 2021</p>
             <div id="footerPic"></div>
           </div>
         </div>

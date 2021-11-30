@@ -4,7 +4,9 @@ Business College Helsinki school assignment with class components and React Rout
 
 ## API used
 
-https://restcountries.com/v2/all?fields=name,capital,currencies,flag,population,currency,languages
+Country data: https://restcountries.com/
+
+Weather data: https://openweathermap.org/
 
 ## Pictures
 
@@ -16,6 +18,7 @@ Photo by Monstera from Pexels: https://www.pexels.com/photo/interior-of-travel-a
 
 - React
 - Axios
+- React Router 6
 
 ## Screenshot
 
