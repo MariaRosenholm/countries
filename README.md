@@ -2,15 +2,13 @@
 
 Business College Helsinki school assignment with class components and React Router 6.
 
-## API used
+## APIs
 
 Country data: https://restcountries.com/
 
 Weather data: https://openweathermap.org/
 
-## Pictures
-
-### Home and About page background
+## Background picture
 
 Photo by Monstera from Pexels: https://www.pexels.com/photo/interior-of-travel-agency-workplace-7411973/
 
