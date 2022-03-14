@@ -68,7 +68,7 @@ class CountrySingle extends Component {
                 </h3>
                 <h3>
                   Language(s):
-                  {this.state.country.languages.map((l, i) => (
+                  {this.state.country.languages?.map((l, i) => (
                     <span key={i}> {l.name}, </span>
                   ))}
                 </h3>
@@ -76,7 +76,7 @@ class CountrySingle extends Component {
               <div id="list2">
                 <h3>
                   Currency(cies):
-                  {this.state.country.currencies.map((c) => (
+                  {this.state.country.currencies?.map((c) => (
                     <span>
                       {" "}
                       <span id="symbol">{c.symbol}</span> {c.name},
